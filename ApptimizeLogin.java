@@ -50,6 +50,7 @@ public class ApptimizeLogin {
 		WebDriverWait wait2 = new WebDriverWait(driver, 10);
 		wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='signup-text']")));
 		driver.findElement(By.xpath("//div[@id='signup-text']")).click();
+		System.out.println("if tests fails here, please make sure email address has not been used to create account");
 		
 		//Create first app
 		WebDriverWait wait3 = new WebDriverWait(driver, 10);
